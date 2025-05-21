@@ -1,0 +1,24 @@
+{
+    "monitoring": {
+        "interval_minutes": 5,
+        "timeout_seconds": 10,
+        "max_retries": 3,
+        "retry_delay_seconds": 2,
+        "urls": [
+            {
+                "name": "Example Site",
+                "url": "https://example.com",
+                "expected_status": 200,
+                "headers": {
+                    "User-Agent": "Secure-Monitoring-Agent/1.0"
+                }
+            }
+        ]
+    },
+    "security": {
+        "max_urls": 100,
+        "allowed_schemes": ["https"],
+        "max_timeout_seconds": 30,
+        "max_interval_minutes": 60
+    }
+} 
